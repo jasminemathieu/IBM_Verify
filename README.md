@@ -7,19 +7,14 @@
 
 ## Introduction
 
-This project covers the configuration process of SSO for a custom application using IBM Security Verify. IBM Security Verify includes Security Assertion Markup Language (SAML) and OpenID Connect (OIDC) federated cloud-based SSO with connectors. In this tutorial, you will learn how to make the required connection for your custom application using the OIDC SSO protocol.
+This project focuses on setting up single sign-on (SSO) for a custom application using IBM Security Verify. IBM Security Verify offers federated cloud-based SSO with connectors, supporting both Security Assertion Markup Language (SAML) and OpenID Connect (OIDC). In this tutorial, you’ll learn how to establish the necessary connection for your custom application using the OIDC SSO protocol.
 
-OpenID Connect v1.0 and OAuth 2.0 standard are popular because they have simple client-side implementations, making it easy to get connected. The standards support different grant types for different use cases. For web applications, the Authorization code grant type is the most commonly used and most widely supported. We will use the Authorization code grant type for this tutorial.
-
-### Components used to complete this project:
-
-### Components used:
+OpenID Connect v1.0 and OAuth 2.0 are widely adopted standards due to their straightforward client-side implementations. For web applications, the Authorization code grant type is commonly used and well-supported. In this tutorial, we’ll utilize the Authorization code grant type. Here are the key components used in this project:
 
     IBM Security Verify: provides identity-as-a-service for every user including SSO and MFA.
     OpenID Connect: modern standard for web SSO adding an identity layer to the OAuth 2.0 standard.
     Security Assertion Markup Language (SAML): provides authentication for a user once and communicate that authentication to multiple applications.
     
-
 ## Add a custom application 1
 
 We begin this project with opening IBM Security Verify, clicking on the Applications tab, then Add application. 
