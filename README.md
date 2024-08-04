@@ -15,65 +15,66 @@ OpenID Connect v1.0 and OAuth 2.0 are widely adopted standards due to their stra
     OpenID Connect: modern standard for web SSO adding an identity layer to the OAuth 2.0 standard.
     Security Assertion Markup Language (SAML): provides authentication for a user once and communicate that authentication to multiple applications.
     
-## Add a custom application 1
+## 1. Add a custom application
 
-We begin this project with opening IBM Security Verify, clicking on the Applications tab, then Add application. 
-
-We will then click on Custom Application
+Let’s proceed with logging into IBM Security Verify. Navigate to the Applications tab and click “Add application.” We will choose Custom Application for this project.
 
 ![Add application](https://imgur.com/dSvmARm.jpg) 
 
-For this project we will name our app "Tester App". Click the Sign-on tab and configure the following:
+On the Sign-on tab, configure the following:
 
-    Enter a name for the app, such as Tester App.
-    Select the Sign-on method as Open ID Connect 1.0.
-    Enter the application URL as http://localhost:9080.
-    For Grant types, choose Authorization code.
+    Name your app (e.g., “Tester App”).
+    Set the Sign-on method to “OpenID Connect 1.0.”
+    Specify the application URL (e.g., http://localhost:9080).
+    For Grant types, select Authorization code.
     Unselect the option Require proof key for code exchange (PKCE) verification.
     For redirect URIs, enter http://localhost:9080/app/oidcclient/redirect/tutorial.
     
-Click Save to save the configuration. 
+Click "Save" to save the configuration. 
 
 ![Name app](https://imgur.com/HCLmoXq.jpg) 
 
 ![config app](https://imgur.com/Xe4aL4r.jpg) 
 
-Moving on to the Entitlements select Automatic access for all users and groups as the Access Type and click Save
+Next, under Entitlements, select “Automatic access for all users and groups” as the Access Type, and click “Save.”
 
 ![access type](https://imgur.com/tJEjr12.jpg) 
 
-Our application has been susscessfully created.
+Our application has been successfully created! 🎉
+
 ![config complete](https://imgur.com/1TLBDuz.jpg) 
 
-## Collect application information for confirguration 2
-On the Applications menu, select the row with the newly created Tester App, and click the Settings icon.
+## 2. Collect application information for confirguration
+Now, let’s collect the necessary needed for future steps. On the Applications menu, select the row with the newly created Tester App, and click the Settings icon.
 
 ![settings](https://imgur.com/JfzGpT2.jpg) 
 
-We will note the following for future steps in this process:
+Notate the following:
 
-    Client
+    Client ID
     Client secret 
-    Introspection endpoint
+    Introspection_endpoint
     Authorization_endpoint
     Token_endpoint
     Userinfo_endpoint
 
-![note clientid](https://imgur.com/5NzSjrp.jpg) 
+![note clientid](https://imgur.com/M4EuwP0.jpg) 
 
-We will gather the remaining codes from the provided link within the sign-on tab 
+We will gather the remaining codes from the provided link within the Sign-on tab, under the OpenID Connect single sign-on configuration section.
+
+![note clientid](https://imgur.com/pVY00JN.jpg) 
 
 ![link to endpoints](https://imgur.com/NtvOU4G.jpg) 
 
-![note endpoints](https://imgur.com/ZtHyhwq.jpg) 
+![note endpoints](https://imgur.com/H0XaLGh.jpg) 
 
-![note endpoints2](https://imgur.com/hpBBFYH.jpg) 
+![note endpoints2](https://imgur.com/UM02kIy.jpg) 
 
-Using terminal, we will Run the following command to clone the GitHub repo:
+Finally, open your terminal and run the following command to clone the GitHub repo:
 
     git clone https://github.com/IBM/open-liberty-security-verify-tutorial.git
 
-We will then cd to the config directory:
+Navigate to the config directory:
 
     cd open-liberty-security-verify-tutorial/src/main/liberty/config
 
@@ -92,16 +93,15 @@ We will then edit and configure both the server.xml file and the verify.config f
 
 ![editing nano](https://imgur.com/R9HEMYq.jpg)  
 
-## Successful Authorization 3
+## 3. Successful Authorization
 
-In this process we were able to end this project with a successful authorization connection. 
+We were able to end this project with a successful authorized connection. 
 
 ![unauth](https://imgur.com/Uk1FDJW.jpg) 
 
 ![successful auth](https://imgur.com/kBiBgCH.jpg) 
 
-
 ## Conclusion
-In this project, I was able to successfully add SSO to a custom application with IBM Security Verify. You saw how the OpenID Connect client is configured using the OpenID client on Open Liberty to work with IBM Security Verify.
+In this project, I successfully implemented Single Sign-On (SSO) for a custom application using IBM Security Verify. You learned how to configure the OpenID Connect client within Open Liberty to seamlessly integrate with IBM Security Verify.
 
 ## fin
