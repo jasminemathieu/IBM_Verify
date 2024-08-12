@@ -1,9 +1,6 @@
 # Configure Custom App to Integrate with IBM Security Verify for SSO
 
-<div align="center">
-  <img src="https://store-images.s-microsoft.com/image/apps.46016.d3eacc69-6358-4a43-94d6-465eb39ca496.57ac5c5e-d47e-4cd6-a125-1d8c8f96001f.a7754481-5cd2-4645-a426-f32c45fcd298" height="360" alt="ibmsverify logo"  />
-  <img width="108" />
-</div>
+![Proj Img](https://imgur.com/P5PkEbc.jpg) 
 
 ## Introduction
 
