@@ -1,4 +1,4 @@
-# Configure Custom App to Integrate with IBM Security Verify for SSO
+# Implementing SSO for Custom Applications with IBM Security Verify
 
 ![Proj Img](https://imgur.com/P5PkEbc.jpg) 
 
