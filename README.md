@@ -94,7 +94,6 @@ We will then edit and configure both the server.xml file and the verify.config f
 
 We were able to end this project with a successful authorized connection. 
 
-![unauth](https://imgur.com/Uk1FDJW.jpg) 
 
 ![successful auth](https://imgur.com/kBiBgCH.jpg) 
 
