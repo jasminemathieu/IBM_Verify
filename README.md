@@ -57,7 +57,7 @@ Notate the following:
 
 ![note clientid](https://imgur.com/M4EuwP0.jpg) 
 
-We will gather the remaining codes from the provided link within the Sign-on tab, under the OpenID Connect single sign-on configuration section.
+We will gather the remaining JSON format codes from the provided link within the Sign-on tab, under the OpenID Connect single sign-on configuration section.
 
 ![note clientid](https://imgur.com/pVY00JN.jpg) 
 
